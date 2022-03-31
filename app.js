@@ -4,9 +4,8 @@ const app = express();
 
 app.use(express.static(path.resolve(__dirname, "./public")));
 
-app.listen(3000, () => {
-    console.log("levantando un servidor en express en ", "http://localhost:3000");
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT);
 
 app.get('/home', (req,res) =>{
     res.sendFile(path.join(__dirname, './views/home.html'));
