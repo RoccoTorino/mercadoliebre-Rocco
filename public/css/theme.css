@@ -94,3 +94,7 @@ body {
       display: flex;
       flex-wrap: wrap;
   }
+  .padding-width-header {
+    width: 100%;
+    padding: 20px;
+  }
